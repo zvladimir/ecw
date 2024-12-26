@@ -2,7 +2,7 @@
 <div align="center">
 Daily assistant in the life of an electronic engineer
 <br /><br />
-<img src="https://zvladimir.github.io/images/ecw_intro.png" alt="Описание картинки" width="600">
+<img src="https://zvladimir.github.io/images/ecw_intro.gif" alt="Описание картинки" width="600">
 </div>
 <br />
 
