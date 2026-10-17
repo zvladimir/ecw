@@ -1,0 +1,121 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "u",
+      "label": "U [V]",
+      "status": "ok",
+      "text": "→ 12.0000 V"
+    },
+    {
+      "computed": null,
+      "hint": "0.5, 500m",
+      "key": "i",
+      "label": "I [A]",
+      "status": "ok",
+      "text": "→ 2.0000 mA"
+    },
+    {
+      "computed": "",
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r",
+      "label": "R [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": "",
+      "hint": "3, 250m",
+      "key": "p",
+      "label": "P [W]",
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "outcome": {
+    "kind": "solved"
+  },
+  "table": {
+    "header": [
+      "",
+      "U [V]",
+      "I [A]",
+      "R [Ω]",
+      "G [S]",
+      "P [W]"
+    ],
+    "rows": [
+      [
+        {
+          "id": "breakdown.nominal"
+        },
+        "12.0000 V",
+        "2.0000 mA",
+        "6.0000 kΩ",
+        "166.6667 uS",
+        "24.0000 mW"
+      ],
+      [
+        {
+          "id": "breakdown.min"
+        },
+        "12.0000 V",
+        "2.0000 mA",
+        "6.0000 kΩ",
+        "166.6667 uS",
+        "24.0000 mW"
+      ],
+      [
+        {
+          "id": "breakdown.max"
+        },
+        "12.0000 V",
+        "2.0000 mA",
+        "6.0000 kΩ",
+        "166.6667 uS",
+        "24.0000 mW"
+      ],
+      [
+        {
+          "id": "breakdown.upper_percent"
+        },
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %"
+      ],
+      [
+        {
+          "id": "breakdown.upper_value"
+        },
+        "+0.0000 V",
+        "+0.0000 A",
+        "+0.0000 Ω",
+        "+0.0000 S",
+        "+0.0000 W"
+      ],
+      [
+        {
+          "id": "breakdown.lower_percent"
+        },
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %"
+      ],
+      [
+        {
+          "id": "breakdown.lower_value"
+        },
+        "-0.0000 V",
+        "-0.0000 A",
+        "-0.0000 Ω",
+        "-0.0000 S",
+        "-0.0000 W"
+      ]
+    ]
+  }
+}

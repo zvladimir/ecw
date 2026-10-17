@@ -1,0 +1,83 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-7; 7",
+      "key": "vin",
+      "label": "Vin min; max [V]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-14; 14",
+      "key": "vout",
+      "label": "Vout min; max [V]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "1k",
+      "key": "r1",
+      "label": "R1 [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "10k",
+      "key": "r2",
+      "label": "R2 [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-10",
+      "key": "gain",
+      "label": "G [V/V]",
+      "status": "error",
+      "text": {
+        "args": {
+          "quantity": "G",
+          "text": "5"
+        },
+        "id": "error.parse.not_negative"
+      }
+    }
+  ],
+  "no_data": null,
+  "outcome": {
+    "kind": "fix_errors",
+    "text": {
+      "id": "common.fix_errors"
+    }
+  },
+  "plot": {
+    "dims": [],
+    "guides": [],
+    "levels": [],
+    "lines": [],
+    "marks": [],
+    "x": [
+      -10.0,
+      10.0
+    ],
+    "x_label": "Vin, V",
+    "x_sym": "Vin",
+    "x_unit": "V",
+    "y": [
+      -10.0,
+      10.0
+    ],
+    "y_label": "Vout, V",
+    "y_unit": "V"
+  },
+  "table": null
+}

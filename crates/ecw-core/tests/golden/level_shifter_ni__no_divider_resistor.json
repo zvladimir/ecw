@@ -1,0 +1,105 @@
+{
+  "checks": [],
+  "fields": [
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "2.5",
+      "key": "vref",
+      "label": "Vref [V]",
+      "status": "ok",
+      "text": "→ 2.5000 V"
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "1k",
+      "key": "r1",
+      "label": "R1 [Ω]",
+      "status": "ok",
+      "text": "→ 1.0000 kΩ"
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "777",
+      "key": "r2",
+      "label": "R2 [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "402",
+      "key": "r3",
+      "label": "R3 [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "1k",
+      "key": "r4",
+      "label": "R4 [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "2; 5",
+      "key": "vin",
+      "label": "Vin min; max [V]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "0.05; 4.95",
+      "key": "vout",
+      "label": "Vout min; max [V]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": "1.6333",
+      "group": "signal",
+      "hint": "1.63",
+      "key": "gain",
+      "label": "G [V/V]",
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "notes": [],
+  "outcome": {
+    "kind": "pending",
+    "text": {
+      "id": "level_shifter_ni.fill_in_resistors"
+    }
+  },
+  "plot": {
+    "dims": [],
+    "guides": [],
+    "levels": [],
+    "lines": [],
+    "marks": [],
+    "x": [
+      -10.0,
+      10.0
+    ],
+    "x_label": "Vin, V",
+    "x_sym": "Vin",
+    "x_unit": "V",
+    "y": [
+      -10.0,
+      10.0
+    ],
+    "y_label": "Vo, V",
+    "y_unit": "V"
+  },
+  "steps": null
+}

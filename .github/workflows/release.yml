@@ -1,0 +1,137 @@
+name: Release
+
+# A tag `vX.Y.Z` builds Windows (.exe), Linux (.AppImage and a plain binary) and the browser version (one
+# self-contained .html with WebAssembly inside), and publishes them as a GitHub Release with
+# SHA256SUMS. Nothing needs an installer.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+env:
+  CARGO_TERM_COLOR: always
+  CARGO_INCREMENTAL: 0
+
+jobs:
+  verify:
+    runs-on: ubuntu-22.04
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: The tag matches the versions in the project
+        id: v
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          cargo_version=$(awk -F'"' '/^version = / { print $2; exit }' src-tauri/Cargo.toml)
+          conf_version=$(grep -m1 '"version"' src-tauri/tauri.conf.json | awk -F'"' '{ print $4 }')
+          if [ "$version" != "$cargo_version" ] || [ "$version" != "$conf_version" ]; then
+            echo "tag $GITHUB_REF_NAME, src-tauri/Cargo.toml $cargo_version, tauri.conf.json $conf_version" >&2
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo test -p ecw-core -p ecw-wasm --locked
+
+  linux:
+    needs: verify
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: Tauri system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev libsoup-3.0-dev \
+            libayatana-appindicator3-dev librsvg2-dev patchelf file
+      - run: cargo install tauri-cli --version "^2" --locked
+      - name: AppImage
+        env:
+          NO_STRIP: "true"
+          APPIMAGE_EXTRACT_AND_RUN: "1"
+        run: cargo tauri build --bundles appimage -- --locked
+      - name: Name the artifact
+        run: |
+          mkdir out
+          cp target/release/bundle/appimage/*.AppImage \
+            "out/ecw-${{ needs.verify.outputs.version }}-linux-x86_64.AppImage"
+          # The bundler leaves the plain release binary next to the AppImage: it needs
+          # WebKitGTK 4.1 and GTK 3 on the system, but is a few times smaller.
+          cp target/release/ecw "out/ecw-${{ needs.verify.outputs.version }}-linux-x86_64"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux
+          path: out/*
+
+  windows:
+    needs: verify
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo install tauri-cli --version "^2" --locked
+      - name: Portable exe
+        run: cargo tauri build --no-bundle -- --locked
+      - name: Name the artifact
+        run: |
+          mkdir out
+          cp target/release/ecw.exe \
+            "out/ecw-${{ needs.verify.outputs.version }}-windows-x64.exe"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: windows
+          path: out/*
+
+  web:
+    needs: verify
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: Swatinem/rust-cache@v2
+      - name: wasm-bindgen CLI (the version of Cargo.lock)
+        run: |
+          version=$(awk '/^name = "wasm-bindgen"$/ { getline; gsub(/[version = "]/, ""); print; exit }' Cargo.lock)
+          echo "WASM_BINDGEN_VERSION=$version" >> "$GITHUB_ENV"
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: wasm-bindgen-cli@${{ env.WASM_BINDGEN_VERSION }}
+      - run: ./scripts/build-web.sh
+      - name: Name the artifact
+        run: |
+          mkdir out
+          cp target/web/ecw.html "out/ecw-${{ needs.verify.outputs.version }}-web.html"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: web
+          path: out/*
+
+  publish:
+    needs: [linux, windows, web]
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: out
+          merge-multiple: true
+      - name: Checksums
+        working-directory: out
+        run: sha256sum * > SHA256SUMS
+      - name: GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" out/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "ECW $GITHUB_REF_NAME" \
+            --generate-notes

@@ -1,0 +1,43 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "u",
+      "label": "U [V]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "0.5, 500m",
+      "key": "i",
+      "label": "I [A]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r",
+      "label": "R [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "3, 250m",
+      "key": "p",
+      "label": "P [W]",
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "outcome": {
+    "kind": "pending",
+    "text": {
+      "id": "ohms_law.enter_two"
+    }
+  },
+  "table": null
+}

@@ -1,0 +1,47 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "u",
+      "label": "U [V]",
+      "status": "ok",
+      "text": "→ 1.0000 V"
+    },
+    {
+      "computed": null,
+      "hint": "0.5, 500m",
+      "key": "i",
+      "label": "I [A]",
+      "status": "ok",
+      "text": "→ 1.0000 A"
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r",
+      "label": "R [Ω]",
+      "status": "ok",
+      "text": "→ 1.0000 Ω"
+    },
+    {
+      "computed": null,
+      "hint": "3, 250m",
+      "key": "p",
+      "label": "P [W]",
+      "status": "ok",
+      "text": "→ 1.0000 W"
+    }
+  ],
+  "outcome": {
+    "kind": "too_many",
+    "text": {
+      "args": {
+        "given": "4",
+        "required": "2"
+      },
+      "id": "common.too_many_inputs"
+    }
+  },
+  "table": null
+}

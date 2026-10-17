@@ -1,0 +1,121 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vin",
+      "label": {
+        "id": "voltage_divider.label.vin"
+      },
+      "status": "ok",
+      "text": "→ 12.0000 V"
+    },
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vout1",
+      "label": {
+        "id": "voltage_divider.label.vout"
+      },
+      "status": "ok",
+      "text": "→ 3.3000 V"
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r1",
+      "label": {
+        "id": "voltage_divider.label.r1_top"
+      },
+      "status": "ok",
+      "text": "→ 10.0000 kΩ"
+    },
+    {
+      "computed": "",
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r2",
+      "label": {
+        "id": "voltage_divider.label.r2_bottom"
+      },
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "outcome": {
+    "kind": "solved"
+  },
+  "table": {
+    "header": [
+      "",
+      "Vin [V]",
+      "Vout1 [V]",
+      "R1 [Ω]",
+      "R2 [Ω]"
+    ],
+    "rows": [
+      [
+        {
+          "id": "breakdown.nominal"
+        },
+        "12.0000 V",
+        "3.3000 V",
+        "10.0000 kΩ",
+        "3.7931 kΩ"
+      ],
+      [
+        {
+          "id": "breakdown.min"
+        },
+        "12.0000 V",
+        "3.3000 V",
+        "10.0000 kΩ",
+        "3.7931 kΩ"
+      ],
+      [
+        {
+          "id": "breakdown.max"
+        },
+        "12.0000 V",
+        "3.3000 V",
+        "10.0000 kΩ",
+        "3.7931 kΩ"
+      ],
+      [
+        {
+          "id": "breakdown.upper_percent"
+        },
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %"
+      ],
+      [
+        {
+          "id": "breakdown.upper_value"
+        },
+        "+0.0000 V",
+        "+0.0000 V",
+        "+0.0000 Ω",
+        "+0.0000 Ω"
+      ],
+      [
+        {
+          "id": "breakdown.lower_percent"
+        },
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %"
+      ],
+      [
+        {
+          "id": "breakdown.lower_value"
+        },
+        "-0.0000 V",
+        "-0.0000 V",
+        "-0.0000 Ω",
+        "-0.0000 Ω"
+      ]
+    ]
+  }
+}

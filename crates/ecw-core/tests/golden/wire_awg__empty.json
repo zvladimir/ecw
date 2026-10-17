@@ -1,0 +1,31 @@
+{
+  "current": {
+    "computed": null,
+    "status": "empty",
+    "text": ""
+  },
+  "default_n": 1.0,
+  "length": {
+    "computed": null,
+    "status": "empty",
+    "text": ""
+  },
+  "max_n": 1000.0,
+  "min_n": 1.0,
+  "note": {
+    "id": "wire_awg.data_source_note"
+  },
+  "outcome": {
+    "kind": "pending",
+    "text": {
+      "id": "wire_awg.fill_all"
+    }
+  },
+  "rows": [],
+  "rows_total": 44,
+  "rth": {
+    "computed": null,
+    "status": "empty",
+    "text": ""
+  }
+}

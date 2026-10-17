@@ -1,0 +1,87 @@
+{
+  "checks": [],
+  "fields": [
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "0",
+      "key": "vref",
+      "label": "Vref [V]",
+      "status": "ok",
+      "text": "→ 0.0000 V"
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "10k",
+      "key": "r1",
+      "label": "R1 [Ω]",
+      "status": "ok",
+      "text": "→ 10.0000 kΩ"
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "20k",
+      "key": "r3",
+      "label": "R3 [Ω]",
+      "status": "ok",
+      "text": "→ -5.0000 Ω"
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-1.25; 1.25",
+      "key": "vdiff",
+      "label": "Vindiff min; max [V]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-2.5; 2.5",
+      "key": "vo",
+      "label": "Vout min; max [V]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": "2.0000",
+      "group": "signal",
+      "hint": "2",
+      "key": "gain",
+      "label": "G [V/V]",
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "notes": [],
+  "outcome": {
+    "kind": "error",
+    "text": {
+      "id": "opamp_differential.err.r3_positive"
+    }
+  },
+  "plot": {
+    "dims": [],
+    "guides": [],
+    "levels": [],
+    "lines": [],
+    "marks": [],
+    "x": [
+      -10.0,
+      10.0
+    ],
+    "x_label": "Vdiff, V",
+    "x_sym": "Vdiff",
+    "x_unit": "V",
+    "y": [
+      -10.0,
+      10.0
+    ],
+    "y_label": "Vo, V",
+    "y_unit": "V"
+  },
+  "steps": null
+}

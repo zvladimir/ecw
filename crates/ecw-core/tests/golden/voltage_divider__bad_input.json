@@ -1,0 +1,57 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vin",
+      "label": {
+        "id": "voltage_divider.label.vin"
+      },
+      "status": "error",
+      "text": {
+        "args": {
+          "quantity": "U",
+          "text": "x"
+        },
+        "id": "error.parse.bad_number"
+      }
+    },
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vout1",
+      "label": {
+        "id": "voltage_divider.label.vout"
+      },
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r1",
+      "label": {
+        "id": "voltage_divider.label.r1_top"
+      },
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r2",
+      "label": {
+        "id": "voltage_divider.label.r2_bottom"
+      },
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "outcome": {
+    "kind": "fix_errors",
+    "text": {
+      "id": "common.fix_errors"
+    }
+  },
+  "table": null
+}

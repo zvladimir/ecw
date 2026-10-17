@@ -1,0 +1,27 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Main and help window permissions; links open only for the listed sites",
+  "windows": [
+    "main",
+    "help"
+  ],
+  "permissions": [
+    "core:default",
+    "core:window:allow-close",
+    {
+      "identifier": "opener:allow-open-url",
+      "allow": [
+        {
+          "url": "https://boosty.to/desialsi"
+        },
+        {
+          "url": "https://github.com/zvladimir/*"
+        },
+        {
+          "url": "https://www.ti.com/*"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[package]
+name = "ecw-core"
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.88"
+authors = ["Zibtsev Vladimir <zibtsev.vladimir@gmail.com>"]
+license = "MIT"
+description = "Calculation core of ECW (Engineers' Circuit Workbench): electronics calculators with tolerances"
+repository = "https://github.com/zvladimir/ecw"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+strum = { version = "0.28", features = ["derive"] }
+uom = { version = "0.38", features = ["f64", "si"] }
+
+[lints.rust]
+unsafe_code = "forbid"

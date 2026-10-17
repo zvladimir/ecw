@@ -1,0 +1,25 @@
+{
+  "header": [],
+  "outcome": {
+    "kind": "pending",
+    "text": {
+      "id": "resistor_solver.enter_target"
+    }
+  },
+  "rows": [],
+  "series_options": [
+    "E6",
+    "E12",
+    "E24",
+    "E48",
+    "E96"
+  ],
+  "target": {
+    "computed": null,
+    "status": "empty",
+    "text": ""
+  },
+  "target_hint": {
+    "id": "resistor_solver.target_hint"
+  }
+}

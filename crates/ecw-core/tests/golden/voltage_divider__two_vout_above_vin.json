@@ -1,0 +1,55 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vin",
+      "label": {
+        "id": "voltage_divider.label.vin"
+      },
+      "status": "ok",
+      "text": "→ 5.0000 V"
+    },
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vout1",
+      "label": {
+        "id": "voltage_divider.label.vout"
+      },
+      "status": "ok",
+      "text": "→ 6.0000 V"
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r1",
+      "label": {
+        "id": "voltage_divider.label.r1_top"
+      },
+      "status": "ok",
+      "text": "→ 1.0000 kΩ"
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r2",
+      "label": {
+        "id": "voltage_divider.label.r2_bottom"
+      },
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "outcome": {
+    "kind": "error",
+    "text": {
+      "args": {
+        "left": "Vout",
+        "right": "Vin"
+      },
+      "id": "error.solve.ordered"
+    }
+  },
+  "table": null
+}

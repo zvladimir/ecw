@@ -1,0 +1,157 @@
+{
+  "fields": [
+    {
+      "computed": "",
+      "hint": "12, 12m",
+      "key": "vin",
+      "label": {
+        "id": "voltage_divider.label.vin"
+      },
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vout1",
+      "label": {
+        "id": "voltage_divider.label.vout1"
+      },
+      "status": "ok",
+      "text": "→ 10.0000 V"
+    },
+    {
+      "computed": "",
+      "hint": "12, 12m",
+      "key": "vout2",
+      "label": {
+        "id": "voltage_divider.label.vout2"
+      },
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r1",
+      "label": {
+        "id": "voltage_divider.label.r1_top"
+      },
+      "status": "ok",
+      "text": "→ 1.0000 kΩ"
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r2",
+      "label": {
+        "id": "voltage_divider.label.r2_mid"
+      },
+      "status": "ok",
+      "text": "→ 2.0000 kΩ"
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r3",
+      "label": {
+        "id": "voltage_divider.label.r3_bottom"
+      },
+      "status": "ok",
+      "text": "→ 3.0000 kΩ"
+    }
+  ],
+  "outcome": {
+    "kind": "solved"
+  },
+  "table": {
+    "header": [
+      "",
+      "Vin [V]",
+      "Vout1 [V]",
+      "Vout2 [V]",
+      "R1 [Ω]",
+      "R2 [Ω]",
+      "R3 [Ω]"
+    ],
+    "rows": [
+      [
+        {
+          "id": "breakdown.nominal"
+        },
+        "12.0000 V",
+        "10.0000 V",
+        "6.0000 V",
+        "1.0000 kΩ",
+        "2.0000 kΩ",
+        "3.0000 kΩ"
+      ],
+      [
+        {
+          "id": "breakdown.min"
+        },
+        "12.0000 V",
+        "10.0000 V",
+        "6.0000 V",
+        "1.0000 kΩ",
+        "2.0000 kΩ",
+        "3.0000 kΩ"
+      ],
+      [
+        {
+          "id": "breakdown.max"
+        },
+        "12.0000 V",
+        "10.0000 V",
+        "6.0000 V",
+        "1.0000 kΩ",
+        "2.0000 kΩ",
+        "3.0000 kΩ"
+      ],
+      [
+        {
+          "id": "breakdown.upper_percent"
+        },
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %",
+        "+0.0000 %"
+      ],
+      [
+        {
+          "id": "breakdown.upper_value"
+        },
+        "+0.0000 V",
+        "+0.0000 V",
+        "+0.0000 V",
+        "+0.0000 Ω",
+        "+0.0000 Ω",
+        "+0.0000 Ω"
+      ],
+      [
+        {
+          "id": "breakdown.lower_percent"
+        },
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %",
+        "-0.0000 %"
+      ],
+      [
+        {
+          "id": "breakdown.lower_value"
+        },
+        "-0.0000 V",
+        "-0.0000 V",
+        "-0.0000 V",
+        "-0.0000 Ω",
+        "-0.0000 Ω",
+        "-0.0000 Ω"
+      ]
+    ]
+  }
+}

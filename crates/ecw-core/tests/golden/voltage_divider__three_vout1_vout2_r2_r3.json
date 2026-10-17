@@ -1,0 +1,71 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vin",
+      "label": {
+        "id": "voltage_divider.label.vin"
+      },
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vout1",
+      "label": {
+        "id": "voltage_divider.label.vout1"
+      },
+      "status": "ok",
+      "text": "→ 10.0000 V"
+    },
+    {
+      "computed": null,
+      "hint": "12, 12m",
+      "key": "vout2",
+      "label": {
+        "id": "voltage_divider.label.vout2"
+      },
+      "status": "ok",
+      "text": "→ 6.0000 V"
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r1",
+      "label": {
+        "id": "voltage_divider.label.r1_top"
+      },
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r2",
+      "label": {
+        "id": "voltage_divider.label.r2_mid"
+      },
+      "status": "ok",
+      "text": "→ 2.0000 kΩ"
+    },
+    {
+      "computed": null,
+      "hint": "4.7k, 100, 2.2M",
+      "key": "r3",
+      "label": {
+        "id": "voltage_divider.label.r3_bottom"
+      },
+      "status": "ok",
+      "text": "→ 3.0000 kΩ"
+    }
+  ],
+  "outcome": {
+    "kind": "error",
+    "text": {
+      "id": "error.solve.underdetermined"
+    }
+  },
+  "table": null
+}

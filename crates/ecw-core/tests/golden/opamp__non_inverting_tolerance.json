@@ -1,0 +1,188 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-7; 7",
+      "key": "vin",
+      "label": "Vin min; max [V]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": "10.0000 V; 10.0000 V",
+      "group": "signal",
+      "hint": "-14; 14",
+      "key": "vout",
+      "label": "Vout min; max [V]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "1k",
+      "key": "r1",
+      "label": "R1 [Ω]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "10k",
+      "key": "r2",
+      "label": "R2 [Ω]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": "10.0000 ",
+      "group": "signal",
+      "hint": "-10",
+      "key": "gain",
+      "label": "G [V/V]",
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "no_data": null,
+  "outcome": {
+    "kind": "solved"
+  },
+  "plot": {
+    "dims": [],
+    "guides": [],
+    "levels": [],
+    "lines": [
+      {
+        "kind": "nominal",
+        "name": {
+          "id": "opamp.legend.nominal"
+        },
+        "points": [
+          [
+            -10.0,
+            -100.0
+          ],
+          [
+            10.0,
+            100.0
+          ]
+        ],
+        "width": 2.4
+      },
+      {
+        "kind": "max",
+        "name": {
+          "id": "opamp.legend.max"
+        },
+        "points": [
+          [
+            -10.0,
+            -101.81818181818181
+          ],
+          [
+            10.0,
+            101.81818181818181
+          ]
+        ],
+        "width": 1.4
+      },
+      {
+        "kind": "min",
+        "name": {
+          "id": "opamp.legend.min"
+        },
+        "points": [
+          [
+            -10.0,
+            -98.21782178217822
+          ],
+          [
+            10.0,
+            98.21782178217822
+          ]
+        ],
+        "width": 1.4
+      }
+    ],
+    "marks": [],
+    "x": [
+      -11.0,
+      11.0
+    ],
+    "x_label": "Vin, V",
+    "x_sym": "Vin",
+    "x_unit": "V",
+    "y": [
+      -112.0,
+      112.0
+    ],
+    "y_label": "Vout, V",
+    "y_unit": "V"
+  },
+  "table": {
+    "header": [
+      "",
+      {
+        "id": "common.nom"
+      },
+      {
+        "id": "common.min"
+      },
+      {
+        "id": "common.max"
+      },
+      "Δ, %"
+    ],
+    "rows": [
+      [
+        "Vin [V]",
+        "1.0000 V",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        {
+          "id": "opamp.row.vout_ideal"
+        },
+        "10.0000 V",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        {
+          "id": "opamp.row.vout_with_tolerances"
+        },
+        "10.0000 V",
+        "9.8218 V",
+        "10.1818 V",
+        "±1.80"
+      ],
+      [
+        "R1 [Ω]",
+        "9.0000 kΩ",
+        "8.9100 kΩ",
+        "9.0900 kΩ",
+        "±1.00"
+      ],
+      [
+        "R2 [Ω]",
+        "1.0000 kΩ",
+        "990.0000 Ω",
+        "1.0100 kΩ",
+        "±1.00"
+      ],
+      [
+        "G [V/V]",
+        "10.0000 ",
+        "9.8218 ",
+        "10.1818 ",
+        "±1.80"
+      ]
+    ]
+  }
+}

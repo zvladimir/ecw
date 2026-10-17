@@ -1,0 +1,73 @@
+{
+  "header": [
+    "",
+    {
+      "args": {
+        "series": "E24"
+      },
+      "id": "resistor_solver.standard_series"
+    },
+    {
+      "id": "resistor_solver.custom_pool"
+    }
+  ],
+  "outcome": {
+    "kind": "solved"
+  },
+  "rows": [
+    {
+      "cells": [
+        {
+          "deviation": "+0.00 %  ✓",
+          "in_tolerance": true,
+          "text": "4.7000 kΩ"
+        },
+        null
+      ],
+      "label": {
+        "id": "resistor_solver.single"
+      }
+    },
+    {
+      "cells": [
+        {
+          "deviation": "+0.00 %  ✓",
+          "in_tolerance": true,
+          "text": "1.1000 kΩ + 3.6000 kΩ = 4.7000 kΩ"
+        },
+        null
+      ],
+      "label": {
+        "id": "resistor_solver.series_pair"
+      }
+    },
+    {
+      "cells": [
+        {
+          "deviation": "-0.00 %  ✓",
+          "in_tolerance": true,
+          "text": "4.7000 kΩ ‖ 9.1000 GΩ = 4.7000 kΩ"
+        },
+        null
+      ],
+      "label": {
+        "id": "resistor_solver.parallel_pair"
+      }
+    }
+  ],
+  "series_options": [
+    "E6",
+    "E12",
+    "E24",
+    "E48",
+    "E96"
+  ],
+  "target": {
+    "computed": null,
+    "status": "ok",
+    "text": "→ 4.7000 kΩ"
+  },
+  "target_hint": {
+    "id": "resistor_solver.target_hint"
+  }
+}

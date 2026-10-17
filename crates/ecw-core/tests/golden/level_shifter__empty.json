@@ -1,0 +1,96 @@
+{
+  "checks": [],
+  "fields": [
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "5",
+      "key": "vref",
+      "label": "Vref [V]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "845",
+      "key": "r1",
+      "label": "R1 [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "1.04k",
+      "key": "r2",
+      "label": "R2 [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "circuit",
+      "hint": "5.56k",
+      "key": "r3",
+      "label": "R3 [Ω]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-5; -1",
+      "key": "vin",
+      "label": "Vin min; max [V]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "0.05; 3.3",
+      "key": "vout",
+      "label": "Vout min; max [V]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-0.81",
+      "key": "gain",
+      "label": "G [V/V]",
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "notes": [],
+  "outcome": {
+    "kind": "pending",
+    "text": {
+      "id": "level_shifter.fill_in_vref"
+    }
+  },
+  "plot": {
+    "dims": [],
+    "guides": [],
+    "levels": [],
+    "lines": [],
+    "marks": [],
+    "x": [
+      -10.0,
+      10.0
+    ],
+    "x_label": "Vin, V",
+    "x_sym": "Vin",
+    "x_unit": "V",
+    "y": [
+      -10.0,
+      10.0
+    ],
+    "y_label": "Vo, V",
+    "y_unit": "V"
+  },
+  "steps": null
+}

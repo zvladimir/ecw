@@ -1,0 +1,145 @@
+{
+  "fields": [
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "-7; 7",
+      "key": "vin",
+      "label": "Vin min; max [V]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": "5.0000 V; 5.0000 V",
+      "group": "signal",
+      "hint": "-14; 14",
+      "key": "vout",
+      "label": "Vout min; max [V]",
+      "status": "empty",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "1k",
+      "key": "r1",
+      "label": "R1 [Ω]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": null,
+      "group": "signal",
+      "hint": "10k",
+      "key": "r2",
+      "label": "R2 [Ω]",
+      "status": "ok",
+      "text": ""
+    },
+    {
+      "computed": "10.0000 ",
+      "group": "signal",
+      "hint": "-10",
+      "key": "gain",
+      "label": "G [V/V]",
+      "status": "empty",
+      "text": ""
+    }
+  ],
+  "no_data": null,
+  "outcome": {
+    "kind": "solved"
+  },
+  "plot": {
+    "dims": [],
+    "guides": [],
+    "levels": [],
+    "lines": [
+      {
+        "kind": "nominal",
+        "name": {
+          "id": "opamp.legend.nominal"
+        },
+        "points": [
+          [
+            -10.0,
+            -100.0
+          ],
+          [
+            10.0,
+            100.0
+          ]
+        ],
+        "width": 2.4
+      }
+    ],
+    "marks": [],
+    "x": [
+      -11.0,
+      11.0
+    ],
+    "x_label": "Vin, V",
+    "x_sym": "Vin",
+    "x_unit": "V",
+    "y": [
+      -110.0,
+      110.0
+    ],
+    "y_label": "Vout, V",
+    "y_unit": "V"
+  },
+  "table": {
+    "header": [
+      "",
+      {
+        "id": "common.nom"
+      },
+      {
+        "id": "common.min"
+      },
+      {
+        "id": "common.max"
+      },
+      "Δ, %"
+    ],
+    "rows": [
+      [
+        "Vin [V]",
+        "500.0000 mV",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        {
+          "id": "opamp.row.vout_ideal"
+        },
+        "5.0000 V",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "R1 [Ω]",
+        "9.0000 kΩ",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "R2 [Ω]",
+        "1.0000 kΩ",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "G [V/V]",
+        "10.0000 ",
+        "—",
+        "—",
+        "—"
+      ]
+    ]
+  }
+}

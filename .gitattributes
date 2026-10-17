@@ -1,0 +1,3 @@
+# Text files are LF on every system: the golden tests compare the replies with the files byte
+# for byte, and a Windows checkout with core.autocrlf would turn them into CRLF.
+* text=auto eol=lf
